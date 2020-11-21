@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { from } from 'rxjs';
 
 import {} from '@angular/core';
@@ -9,4 +9,10 @@ import {} from '@angular/core';
 })
 export class HeaderComponent {
 
+   @Output() headerSelected = new EventEmitter<string>();
+
+    onSelect(headerItem: string){
+        this.headerSelected.emit(headerItem)
+        // console.log(headerItem)
+    }
 }
