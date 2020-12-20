@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Receipe } from './receipe';
 
 @Component({
     selector:'app-receipes',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
     styleUrls:['./receipes.component.css']
 })
 export class ReceipesComponent {
+    selectedRecipe: Receipe;
 
 }
